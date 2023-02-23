@@ -27,8 +27,6 @@ public class WeatherService {
 
     public Optional<City> getWeatherData(String city) {
 
-        // String APIKEY = "b476655eb4d9f491696b723d41efead7";
-
         String Url = UriComponentsBuilder.fromUriString("https://api.openweathermap.org/data/2.5/weather")
                 .queryParam("q", city)
                 .queryParam("appid", apiKey)
